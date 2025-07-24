@@ -48,28 +48,6 @@ routery-ui/
 - **Performance Optimized** - Fast loading and smooth interactions
 - **SEO Ready** - Semantic HTML and meta tags
 
-## 🚀 Quick Start
-
-### Local Development
-1. Clone the repository:
-   ```bash
-   git clone [repository-url]
-   cd routery-ui
-   ```
-
-2. Open with a local server:
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   
-   # Using Node.js
-   npx serve .
-   
-   # Or simply open index.html in your browser
-   ```
-
-3. Navigate to `http://localhost:8000` in your browser
-
 ### Deployment
 This is a static website that can be deployed to any web hosting service:
 - **Netlify** - Drop the folder and deploy
