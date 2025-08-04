@@ -517,22 +517,23 @@ body {
     margin: 0 auto;
     padding: 2rem 1rem;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
     min-height: 100vh;
 }
 
 .hero-text {
-    text-align: center;
+    text-align: left;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
+    justify-self: start;
 }
 
 /* Hero Illustration */
 .hero-illustration {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     min-height: 400px;
 }
@@ -793,8 +794,6 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    min-width: 280px;
-    justify-content: center;
 }
 
 .cta-primary:hover {
@@ -1896,57 +1895,12 @@ body {
 
     .hero-text {
         text-align: center;
+        justify-self: center;
     }
 
-    .hero-cta {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .cta-primary,
-    .cta-secondary {
-        width: 100%;
-        min-width: auto;
-    }
-
-    .features-pills {
+    .hero-illustration {
         justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .trust-badges {
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .illustration-container {
-        height: 300px;
-    }
-
-    .truck-container {
-        width: 60px;
-        height: 45px;
-    }
-
-    .info-card {
-        padding: 0.5rem 0.75rem;
-        min-width: 80px;
-    }
-
-    .card-icon {
-        font-size: 1rem;
-        min-width: 28px;
-        height: 28px;
-    }
-
-    .card-title {
-        font-size: 0.75rem;
-    }
-
-    .card-subtitle {
-        font-size: 0.6875rem;
+        min-height: 300px;
     }
 }
 
