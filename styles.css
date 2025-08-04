@@ -1785,77 +1785,37 @@ body {
 /* Enhanced Responsive Design */
 @media (min-width: 768px) {
     .desktop-nav {
-        display: flex;
+        display: flex !important;
     }
-
     .mobile-menu-btn {
+        display: none !important;
+    }
+    .mobile-menu {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .desktop-nav {
+        display: none !important;
+    }
+    .mobile-menu-btn {
+        display: block !important;
+    }
+    .mobile-menu {
         display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100vw;
+        background: rgba(255,255,255,0.98);
+        z-index: 100;
+        border-bottom: 1px solid #e5e7eb;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        animation: slideDown 0.3s ease;
     }
-
-    .hero-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-    }
-
-    .hero-text {
-        text-align: left;
-        max-width: none;
-    }
-
-    .hero-cta {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .features-pills {
-        justify-content: flex-start;
-    }
-
-    .trust-badges {
-        justify-content: flex-start;
-    }
-
-    /* Other sections */
-    .features-container {
-        flex-direction: row;
-    }
-
-    .features-text {
-        text-align: left;
-    }
-
-    .steps-container {
-        flex-direction: row;
-    }
-
-    .connecting-line {
+    .mobile-menu.active {
         display: block;
-    }
-
-    .pricing-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .results-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .contact-info {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .footer-brand {
-        align-items: flex-start;
     }
 }
 
